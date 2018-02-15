@@ -6,12 +6,15 @@ public class Token {
 
     private int amount;
 
+    private int quantity;
+
     public Token() {
     }
 
-    public Token(String meter, int amount) {
+    public Token(String meter, int amount, int quantity) {
         this.meter = meter;
         this.amount = amount;
+        this.quantity = quantity;
     }
 
     public String getMeter() {
@@ -28,5 +31,13 @@ public class Token {
 
     public void setAmount(int amount) {
         this.amount = amount;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 }
